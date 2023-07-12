@@ -1,5 +1,10 @@
 /* Populate database with sample data. */
 
+---------------------------------- fourth part  ----------------------------------
+
+
+
+
 ---------------------------------- third part  ----------------------------------
 
 vet_clinic=*# SELECT * FROM animals;
