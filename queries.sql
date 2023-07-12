@@ -1,5 +1,94 @@
 /*Queries that provide answers to the questions from all projects.*/
 
+---------------------------------- third part  ----------------------------------
+
+-- What animals belong to Melody Pond?
+SELECT animals.name
+FROM animals
+JOIN owners ON animals.owner_id = owners.id
+WHERE owners.full_name = 'Melody Pond';
+    name
+------------
+ Charmander
+ Squirtle
+ Blossom
+(3 filas)
+
+-- List of all animals that are pokemon (their type is Pokemon).
+SELECT animals.name
+FROM animals
+JOIN species ON animals.species_id = species.id
+WHERE species.name = 'Pokemon';
+    name
+------------
+ Pikachu
+ Charmander
+ Squirtle
+ Blossom
+(4 filas)
+
+-- List all owners and their animals, remember to include those that don't own any animal.
+SELECT owners.full_name, animals.name
+FROM owners
+LEFT JOIN animals ON owners.id = animals.owner_id;
+    full_name    |    name
+-----------------+------------
+ Sam Smith       | Agumon
+ Jennifer Orwell | Gabumon
+ Jennifer Orwell | Pikachu
+ Bob             | Devimon
+ Bob             | Plantmon
+ Melody Pond     | Charmander
+ Melody Pond     | Squirtle
+ Melody Pond     | Blossom
+ Dean Winchester | Angemon
+ Dean Winchester | Boarmon
+ Jodie Whittaker |
+(11 filas)
+
+-- How many animals are there per species?
+SELECT species.name, COUNT(animals.id)
+FROM animals
+JOIN species ON animals.species_id = species.id
+GROUP BY species.name;
+  name   | count
+---------+-------
+ Pokemon |     4
+ Digimon |     6
+(2 filas)
+
+-- List all Digimon owned by Jennifer Orwell.
+SELECT animals.name
+FROM animals
+JOIN owners ON animals.owner_id = owners.id
+JOIN species ON animals.species_id = species.id
+WHERE owners.full_name = 'Jennifer Orwell' AND species.name = 'Digimon';
+  name
+---------
+ Gabumon
+(1 fila)
+
+-- List all animals owned by Dean Winchester that haven't tried to escape.
+SELECT animals.name
+FROM animals
+JOIN owners ON animals.owner_id = owners.id
+WHERE owners.full_name = 'Dean Winchester' AND animals.escape_attempts = 0;
+ name
+------
+(0 filas)
+
+-- Who owns the most animals?
+SELECT owners.full_name, COUNT(animals.id)
+FROM animals
+JOIN owners ON animals.owner_id = owners.id
+GROUP BY owners.full_name
+ORDER BY COUNT(animals.id) DESC
+LIMIT 1;
+  full_name  | count
+-------------+-------
+ Melody Pond |     3
+(1 fila)
+
 ---------------------------------- Second part  ----------------------------------
 
 vet_clinic=# BEGIN;
