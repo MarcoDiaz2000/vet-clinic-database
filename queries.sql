@@ -21,12 +21,11 @@ JOIN species ON animals.species_id = species.id
 WHERE species.name = 'Pokemon';
     name
 ------------
- Ditto
  Pikachu
  Charmander
  Squirtle
  Blossom
-(5 filas)
+(4 filas)
 
 -- List all owners and their animals, remember to include those that don't own any animal.
 SELECT owners.full_name, animals.name
@@ -54,7 +53,7 @@ JOIN species ON animals.species_id = species.id
 GROUP BY species.name;
   name   | count
 ---------+-------
- Pokemon |     5
+ Pokemon |     4
  Digimon |     6
 (2 filas)
 
