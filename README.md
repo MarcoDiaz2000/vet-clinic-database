@@ -1,9 +1,3 @@
-# curriculum-databases-projects-template
-
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
-
-
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
@@ -42,8 +36,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 # 📖 [vet-clinic-database] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
 **[vet-clinic-database]** In this project, use a relational database to create the data structure of a veterinary clinic. I started with a table, and step by step, I created a complete database with data about:
 
 > animals
@@ -68,8 +60,6 @@ In addition to creating the data structure, SQL queries were required to answer 
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[Add "join table" for visits]**
 - **[Database performance audit]**
 - **[Add database schema diagram]**
@@ -78,13 +68,6 @@ In addition to creating the data structure, SQL queries were required to answer 
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Comming soon
-
-<!-- - [Live Demo Link](<#>)
- -->
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -176,7 +159,6 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Marco Díaz**
 
@@ -190,10 +172,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
 - [ ] **[Increase the database]**
-- [ ] **[Increase the table specifications**
+- [ ] **[Increase the table specifications]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
