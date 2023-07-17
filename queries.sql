@@ -1,5 +1,13 @@
 /*Queries that provide answers to the questions from all projects.*/
 
+---------------------------------- Fifth part  ----------------------------------
+
+SELECT COUNT(*) FROM visits where animal_id = 4;
+
+SELECT * FROM visits where vet_id = 2;
+
+SELECT * FROM owners where email = 'owner_18327@mail.com';
+
 ---------------------------------- fourth part  ----------------------------------
 
 --1 Who was the last animal seen by William Tatcher?
