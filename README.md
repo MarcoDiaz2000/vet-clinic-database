@@ -47,7 +47,8 @@ This repository includes files with plain SQL that can be used to recreate a dat
 In addition to creating the data structure, SQL queries were required to answer specific questions.
 
 ## 🛠 Schema Diagram <a name="schema-diagram"></a>
-(vetclinic.png)
+
+![vetclinic](https://github.com/MarcoDiaz2000/vet-clinic-database/assets/125866339/398e3075-9b4a-4e86-846c-be158357db3b)
 
 ## 🛠 Built With <a name="built-with"></a>
 
