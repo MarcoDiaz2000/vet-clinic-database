@@ -13,7 +13,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [📝 Schema Diagram](#schema-diagram")
+  - [📝 Schema Diagram](#schema-diagram)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
